@@ -1,10 +1,38 @@
+{__NOLAYOUT__}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="/screen/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/screen/js/jquery.js"></script>
+<script type="text/javascript" src="/screen/js/jquery.SuperSlide.js"></script>
 </head>
-<body>
+<body scroll="no">
+	<div class="second-screen-main">
+		<div class="mBan2">
+			<div id="slideBox" class="slideBox">
+				<!--<div class="hd">
+					<ul><li></li><li></li></ul>
+				</div>-->
+				<div class="bd">
+					<ul>
+						<!--<li><a href="#" target="_blank"><img src="/static/pos/screen/img/second-screen-03.jpg" /></a></li>-->
+						<li><a href="#" target="_blank"><img src="/screen/img/second-screen-01.jpg" /></a></li>
+						<li><a href="#" target="_blank"><img src="/screen/img/second-screen-02.jpg" /></a></li>
+					
+					</ul>
+				</div>
+			</div>
+		</div>
 
+
+	</div>
+	<script type="text/javascript">
+		$(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,trigger:"click"});
+		setInterval(function(){
+			window.location.reload()
+		}, 300000);
+	</script>
 </body>
 </html>
