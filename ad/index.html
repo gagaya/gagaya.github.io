@@ -28,10 +28,13 @@
 
 	</div> 
 	<script type="text/javascript">
+	$(function(){
 		$(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,trigger:"click"});
 		setInterval(function(){
 			window.location.reload()
 		}, 300000);
+	})
+		
 	</script>
 </body>
 </html>
